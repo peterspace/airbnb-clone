@@ -2,8 +2,9 @@ import axios from "axios";
 import { toast } from "react-toastify";
 
 // export const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-// export const BACKEND_URL = 'http://localhost:4000';
-export const BACKEND_URL ='http://127.0.0.1:4000';
+
+// export const BACKEND_URL ='http://127.0.0.1:4000';
+export const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 
 
 export const validateEmail = (email) => {
